@@ -1,0 +1,20 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf0 # This is a SQL query of Rockbuster video data using an inner join on the customer table with address table, country table, city table\
+#A SQL query to find the top 10 countries for Rockbuster video in terms of customer numbers#\
+\
+#top 10 countries for Rockbuster for customer numbers\
+SELECT D.country, COUNT(customer_id)AS count_of_customers\
+FROM customer A\
+INNER JOIN address B ON A.address_id = B.address_id\
+INNER JOIN city C ON B.city_id = C.city_id\
+INNER JOIN country D ON C.country_id = D.country_id\
+GROUP BY D.country\
+ORDER BY COUNT(customer_id)DESC\
+LIMIT 10;}
