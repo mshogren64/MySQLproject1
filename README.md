@@ -1,4 +1,4 @@
-# **MySQLproject1**
+# **Rockbuster Video
 ![image](https://github.com/mshogren64/MySQLproject1/assets/133923160/f555a665-e687-4ce6-bad0-1abbabe00093)
 SQL project for Rockbuster Stealth, LLC  - A video rental company
 
